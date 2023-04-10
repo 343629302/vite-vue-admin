@@ -9,21 +9,21 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports:["vue","vue-router"],
+      imports: ['vue', 'vue-router'],
       resolvers: [ElementPlusResolver()],
-      dts:'./types/auto-imports.d.ts',
-      eslintrc:{
-        enabled:false,
-        filepath:'./.eslintrc-auto-import.json',
-        globalsPropValue:true
+      dts: './types/auto-imports.d.ts',
+      eslintrc: {
+        enabled: false,
+        filepath: './.eslintrc-auto-import.json',
+        globalsPropValue: true
       }
     }),
     Components({
       resolvers: [ElementPlusResolver()],
-      dts:'./types/components.d.ts'
-    }),
+      dts: './types/components.d.ts'
+    })
   ],
-  server:{
-    host:'0.0.0.0'
+  server: {
+    host: '0.0.0.0'
   }
 })
