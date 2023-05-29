@@ -19,6 +19,8 @@ console.log(formData)
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+
+    <div class="w-5">测试测试</div>
   </div>
 </template>
 
